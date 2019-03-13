@@ -75,11 +75,16 @@ nav li a:hover {
     text-decoration: none;
 }
 
+.lastMAJ{
+    border: 1px solid #000000;
+    background-color: #ffffff;
+}
+
 .phone{
     display: none;
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 770px) {
     nav ul li {
       text-align: center;
       float: none;
@@ -105,5 +110,15 @@ nav li a:hover {
 
 html{
     background-color: #333;
+    width: 100%;
+}
+
+p, h2, h3{
+    background-color: #333;
+    color: #ffffff;
+}
+
+pre{
+    tex
 }
 
