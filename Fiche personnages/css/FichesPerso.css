@@ -1,11 +1,109 @@
-/*typo cinzel*/
+.imageTOP{
+    background-image: url("../media/fondtop.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
-.Fond{
-    position:absolute;
-    width: 1000px;
-    box-align: center;
+.imageTOP a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 header li{
     float: left;
 }
+
+nav{
+    background-color: #000000;
+}
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+nav .navleft li {
+    float: left;
+}
+
+nav .navright li {
+    float: right;
+}
+
+nav .private li{
+    float: right;
+}
+
+nav .private{
+    background-color: #1a1a1a;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover, nav li a:visited, nav li a:focus {
+    color: white;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: rgb(100, 100, 100);
+}
+
+.active {
+    background-color: rgb(37, 63, 37);
+    color: white;
+}
+
+.active:hover, .active:visited{
+    background-color: rgb(37, 63, 37);
+    color: white;
+    text-decoration: none;
+}
+
+.phone{
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    nav ul li {
+      text-align: center;
+      float: none;
+    }
+    nav ul{
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .imageTOP img{
+        width: 50%;
+    }
+    nav .private{
+        border-left: 0px;
+    }
+    .computer{
+        display: none;
+    }
+    .phone{
+        display: block;
+    }
+  }
+
+html{
+    background-color: #333;
+}
+
