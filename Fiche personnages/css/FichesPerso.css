@@ -1,0 +1,11 @@
+/*typo cinzel*/
+
+.Fond{
+    position:absolute;
+    width: 1000px;
+    box-align: center;
+}
+
+header li{
+    float: left;
+}
