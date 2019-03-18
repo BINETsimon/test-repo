@@ -84,6 +84,14 @@ nav li a:hover {
     display: none;
 }
 
+.mainarticle{
+    background-color: #333;
+    color: #ffffff;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+
 @media screen and (max-width: 770px) {
     nav ul li {
       text-align: center;
@@ -110,15 +118,7 @@ nav li a:hover {
 
 html{
     background-color: #333;
-    width: 100%;
 }
 
-p, h2, h3{
-    background-color: #333;
-    color: #ffffff;
-}
 
-pre{
-    tex
-}
 
