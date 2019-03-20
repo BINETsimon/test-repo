@@ -13,6 +13,13 @@
     padding-bottom: 20px;
 }
 
+.containernav {
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 99%;
+    margin: auto
+}
+
 header li{
     float: left;
 }
@@ -39,12 +46,9 @@ nav .navright li {
     float: right;
 }
 
-nav .private li{
-    float: right;
-}
-
 nav .private{
     background-color: #1a1a1a;
+    float: right;
 }
 
 nav li a {
@@ -76,8 +80,13 @@ nav li a:hover {
 }
 
 .lastMAJ{
-    border: 1px solid #000000;
+    border: 2px solid #000000;
+    border-radius: 10px;
     background-color: #ffffff;
+    color: #000000;
+    margin-top: 75px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .phone{
@@ -87,8 +96,14 @@ nav li a:hover {
 .mainarticle{
     background-color: #333;
     color: #ffffff;
-    margin-left: 0px;
-    margin-right: 0px;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+pre{
+    white-space: normal;
+    word-wrap: normal;
+    word-break: break-all;
 }
 
 
