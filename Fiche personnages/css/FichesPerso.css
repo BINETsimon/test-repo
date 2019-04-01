@@ -80,9 +80,9 @@ nav li a:hover {
 }
 
 .lastMAJ{
-    border: 2px solid #000000;
-    border-radius: 10px;
     background-color: #ffffff;
+    border: 1px solid #ccc;
+    border-radius: 10px;
     color: #000000;
     margin-top: 75px;
     padding-left: 10px;
@@ -100,12 +100,43 @@ nav li a:hover {
     padding-right: 3%;
 }
 
-pre{
+.preMaj{
     white-space: normal;
-    word-wrap: normal;
-    word-break: break-all;
+    display: block;
+    padding: 9.5px;
+    margin: 0 0 10px;
+    font-size: 13px;
+    line-height: 1.42857143;
+    color: #333;
+    word-break: break-word;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-family: monospace;
+    text-align: justify;
 }
 
+.Majplus{
+    color: #ffffff;
+    text-shadow: none;
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.Majplus:hover, .Majplus:visited, .Majplus:focus {
+    color: white;
+    text-decoration: none;
+}
+
+.Majplus:hover {
+    background-color: rgb(100, 100, 100);
+}
 
 @media screen and (max-width: 770px) {
     nav ul li {
