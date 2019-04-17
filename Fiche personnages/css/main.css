@@ -94,6 +94,7 @@ nav li a:hover {
 }
 
 .mainarticle{
+    width: 1000px;
     background-color: #333;
     color: #ffffff;
     padding-left: 3%;
@@ -138,7 +139,12 @@ nav li a:hover {
     background-color: rgb(100, 100, 100);
 }
 
-@media screen and (max-width: 800px) {
+main{
+    background-color: #333;
+}
+
+
+@media screen and (max-width: 1000px) {
     nav ul li {
       text-align: center;
       float: none;
@@ -161,10 +167,6 @@ nav li a:hover {
         display: block;
     }
   }
-
-html{
-    background-color: #333;
-}
 
 
 
