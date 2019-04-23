@@ -3,93 +3,44 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <title>Fiche Personnage</title>
-    <link rel="icon" h2ef="media/icon.png"/>
+    <title>Vampire la mascarade</title>
+    <link rel="icon" href="media/icon.png"/>
     <meta name="description" content="Fiches personnages pour le jeu Vampire The Masquerade"/>
     <meta name="keywords" content="JDR, Fiche, personnage, Vampire, Masquerade"/>
     <meta name="author" content="S.B"/>
+
+    <!-- feuille de style principale -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css"/>
-    <script src="../includes/FichesPerso.js"></script>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-    integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <header>
-        <div class="imageTOP">
-            <a href="index.html"><img src="media/vampireb.png"></a>
+        <!-- barre de navigation -->
+        <div class="nav">
+            <ul>    
+                <li><a href="#home">Home</a></li>
+                <li><a href="#fichesperso">Fiches personnage</a></li>
+                <li><a href="#salle">Salle de jeu</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li style="float:right"><a class="active" href="#about">Utilisateur</a></li>
+            </ul>           
         </div>
-        <nav>
-            <div class="containernav computer">
-                <div class="row ">
-                    <div class="col-sm-4">
-                        <div class="navleft">
-                            <ul>
-                                <li><a class="active" href="#home">Home</a></li>
-                                <li><a href="#maj">Notes de mise à jour</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="navright">
-                            <ul>
-                                <li><a href="#news">Terrain de jeu</a></li>
-                                <li><a href="#contact">Mes fiches</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-sm-4">
-                        <div class="private">
-                            <ul>
-                                <li><a href="#contact">Mon espace</a></li>
-                                <li><a href="#news">Questions</a></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="phone">
-                <ul>
-                    <li><a class="active" href="#home">Home</a></li>
-                    <li><a href="#maj">Notes de mise à jour</a></li>
-                </ul>
-            </div>
-        </nav>
     </header>
 
     <main>
-        <div class="mainarticle">
-            <div class="row jsutify-content-arround">
-                <div class="col-md-8"></div>
-                    <div class="présentaion">
-                        <h2>Quels sont les possibilités de ce site ?</h2>
-                        <p>Bienvenue sur le site non officiel de "Vampire la masquarade". Le service proposé permet de réaliser des fiches personnages, de les enregistrer et de pouvoir les utiliser dans l'émulateur de parties.</p>
-                        <h3>La création de fiches personnages</h3>
-                        <p>Pour créer des fiches personnages, connectez vous ou créez un compte (si ce n'est pas encore fait) et allez dans votre espace. Cliquez sur créer une nouvelle fiche puis vous avez champ libre pour la création. Une aide sur le nombre de compétences sera ajouté dans le bas des fiches.</p>
-                        <h3>La création de fiches personnages</h3>
-                        <p>Pour créer des fiches personnages, connectez vous ou créez un compte (si ce n'est pas encore fait) et allez dans votre espace. Cliquez sur créer une nouvelle fiche puis vous avez champ libre pour la création. Une aide sur le nombre de compétences sera ajouté dans le bas des fiches.</p>
-                    </div>
-                </div>
-                    <div class="lastMAJ">
-                        <h2>Quels sont les possibilités de ce site ?</h2>
-                        <div class="preMaj">Bienvenue sur le site non officiel de "Vampire la masquarade". Le service proposé permet de réaliser des fiches personnages, de les enregistrer et de pouvoir les utiliser dans l'émulateur de parties.</div>
-                        <h3>La création de fiches personnages</h3>
-                        <div class="preMaj">Pour créer des fiches personnages, connectez vous ou créez un compte (si ce n'est pas encore fait) et allez dans votre espace. Cliquez sur créer une nouvelle fiche puis vous avez champ libre pour la création. Une aide sur le nombre de compétences sera ajouté dans le bas des fiches.</div>
-                        <a href="#" class="Majplus">Voir toutes les MAJ</a>
-                    </div>
-                </div>
-            </div>
+        <!-- section top -->
+        <div class="imageTOP">
+            <img src="media/vampireb.png">
         </div>
+
+        <!-- section 1 -->
+        <section>
+            <article>
+                <h1>Bienvenu sur le site non-officiel de gestion de fiches personnage du jeu Vampire la masquarade !</h1>
+                <h2>Voici un petit guide sur l'utilisation du site</h2>
+            </article>
+        </section>
     </main>
 </body>
 
