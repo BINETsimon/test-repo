@@ -5,6 +5,10 @@ html, body, main{
     margin: 0;
 }
 
+h1, h2{
+    font-family: "Optimus";
+}
+
 /* barre de navigation */
 
 .nav{
@@ -15,6 +19,7 @@ html, body, main{
     background-color: #333;
     box-shadow: 0 8px 18px #000000;
     z-index: +1;
+    font-family: "Optimus";
 }
 
 .nav ul {
@@ -36,7 +41,7 @@ html, body, main{
     color: white;
     text-align: center;
     text-decoration: none;
-    font-size: 15px;
+    font-size: 20px;
     padding: 15px;
 }
 
@@ -82,7 +87,58 @@ article{
     margin-top: 5%;
 }
 
-article h1{
+section h1{
     font-size: 300%;
     text-align: center;
+}
+
+article li{
+    list-style-type: upper-roman;
+    font-size: 125%;
+    font-weight: bold;
+    font-family: "Optimus";
+}
+
+@font-face{
+    font-family: "Optimus";
+    src: url("../fonts/OptimusPrinceps.ttf")
+}
+
+/* Page éditeur de fiches*/
+
+.editeur{
+    top: 10%;
+    position: fixed;
+    width: 30%;
+    height: 85%;
+    box-shadow: 8px 0px 18px #000000;
+    background-color: #333 ;
+    border-radius: 0px 10px 10px 0px;
+    text-align: center;
+    color: #ffffff;
+}
+
+.articlemargin{
+    width: 50%;
+    margin-right: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.fichesP{
+    width: 250px;
+    height: 300px;
+    margin-top: 50px;    
+    border: #000000 solid 1px;
+    overflow: hidden;
+    background-color: #AAA;
+}
+
+.fichesP img{
+    display: flex;
+    justify-content: center;
+}
+
+.editeur h1{
 }
