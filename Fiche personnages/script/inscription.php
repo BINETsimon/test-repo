@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -7,6 +8,9 @@
     <meta name="description" content="Fiches personnages pour le jeu Vampire The Masquerade"/>
     <meta name="keywords" content="JDR, Fiche, personnage, Vampire, Masquerade"/>
     <meta name="author" content="S.B"/>
+
+    <!-- feuille de style principale -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css"/>
 </head>
 
 <body>
