@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>Vampire la mascarade</title>
-    <link rel="icon" href="media/icon.png"/>
+    <link rel="icon" href="../media/icon.png"/>
     <meta name="description" content="Fiches personnages pour le jeu Vampire The Masquerade"/>
     <meta name="keywords" content="JDR, Fiche, personnage, Vampire, Masquerade"/>
     <meta name="author" content="S.B"/>
@@ -14,8 +14,30 @@
 </head>
 
 <body>
-    <div class="inscriptions">
-
+    <div class="fondformulaire">
+        <div class="formulaire connexion">
+            <h1>Connectez-vous</h1>
+            <form action="inscription.html" method="post">
+                <input type='text' name='login' value="login"></br>
+                <input type='text' name='mdp' value="mot de passe"></br>
+                <input class="submit" type="submit" value="Connexion"> 
+                <input class="submit goin" type="submit" value="S'inscrire"> 
+            </form>
+        </div>
+        <div class="formulaire inscriptions">
+                <h1>Inscrivez-vous</h1>
+                <form action="#" method="post">
+                    <input type='text' name='login' value="login"></br>
+                    <input type='text' name='mdp' value="mot de passe"></br>
+                    <input type='text' name='mdp2' value="répétez votre mot de passe"></br>
+                    <input type='text' name='mail' value="mail"></br>
+                    <input class="submit" type="submit" value="Inscrption"> 
+                    <input class="submit goco" type="submit" value="Se connecter"> 
+                </form>
+        </div>
+        <div class="butons log">
+            <a href="../index.html">retour</a>
+        </div>
     </div>
 </body>
 </html>

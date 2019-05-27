@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <title>Vampire la mascarade</title>
-    <link rel="icon" href="media/icon.png"/>
+    <link rel="icon" href="../../media/icon.png"/>
     <meta name="description" content="Fiches personnages pour le jeu Vampire The Masquerade"/>
     <meta name="keywords" content="JDR, Fiche, personnage, Vampire, Masquerade"/>
     <meta name="author" content="S.B"/>
@@ -29,6 +29,181 @@
     </header>
 
     <main>
+        <article class="container">
+            <div class="zones">
+                <form action="ficheP.html" method="post">
+                    Nom : <input type='text' name='Nom'>
+                    Chronique : <input type='text' name='Chronique'>
+                    Joueur : <input type='text' name='Joueur'>
+                </form>
+                <form action="ficheP.html" method="post">
+                    Nature : <input type='text' name='Nature'>
+                    Attitude : <input type='text' name='Attitude'>
+                    Concept : <input type='text' name='Concept'>
+                </form>
+                <form action="ficheP.html" method="post">
+                    Clan : <input type='text' name='Clan'>
+                    Génération : <input type='text' name='Génération'>
+                    Refuge : <input type='text' name='Refuge'>
+                </form>
+            </div>
+            <h1>Attributs</h1>
+            <div class="zones">
+                <div class="attributs">
+                    <h2>Physique</h2>
+                    <form action="ficheP.html" method="post">
+                        <div>Force <input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'> </div>
+                        <div>Dextérité <input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'> </div>
+                        <div>Vigueur <input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'> </div>
+                    </form>
+                </div>
+                <div class="attributs">
+                    <h2>Social</h2>
+                    <form action="ficheP.html" method="post">
+                        <div>Charisme <input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'> </div>
+                        <div>Manipulation <input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'> </div>
+                        <div>Apparence <input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'> </div>
+                    </form>
+                </div>
+                <div class="attributs">
+                    <h2>Mental</h2>
+                    <form action="ficheP.html" method="post">
+                        <div>Perception <input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'> </div>
+                        <div>Intelligence <input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'> </div>
+                        <div>Astuce <input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'> </div>
+                    </form>                  
+                </div>
+            </div>
+            <h1>Capacites</h1>
+            <div class="zones">
+                <div class="attributs">
+                    <h2>Mental</h2>
+                    <form action="ficheP.html" method="post">
+                        <div>Vigilance <input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'> </div>
+                        <div>Athlétisme <input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'> </div>
+                        <div>Bagarre <input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'> </div>
+                        <div>Esquive <input type="radio" name='4'><input type="radio" name='4'><input type="radio" name='4'><input type="radio" name='4'><input type="radio" name='4'> </div>
+                        <div>Empathie <input type="radio" name='5'><input type="radio" name='5'><input type="radio" name='5'><input type="radio" name='5'><input type="radio" name='5'> </div>
+                        <div>Expression <input type="radio" name='6'><input type="radio" name='6'><input type="radio" name='6'><input type="radio" name='6'><input type="radio" name='6'> </div>
+                        <div>Intidimidation <input type="radio" name='7'><input type="radio" name='7'><input type="radio" name='7'><input type="radio" name='7'><input type="radio" name='7'> </div>
+                        <div>Commandement <input type="radio" name='8'><input type="radio" name='8'><input type="radio" name='8'><input type="radio" name='8'><input type="radio" name='8'> </div>
+                        <div>Expérience de la rue <input type="radio" name='9'><input type="radio" name='9'><input type="radio" name='9'><input type="radio" name='9'><input type="radio" name='9'> </div>
+                        <div>Subterfuge <input type="radio" name='10'><input type="radio" name='10'><input type="radio" name='10'><input type="radio" name='10'><input type="radio" name='10'> </div>
+                    </form>
+                </div>
+                <div class="attributs">
+                    <h2>Competences</h2>
+                    <form action="ficheP.html" method="post">
+                        <div>Animaux <input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'> </div>
+                        <div>Artisanat <input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'> </div>
+                        <div>Conduite <input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'> </div>
+                        <div>Étiquette <input type="radio" name='4'><input type="radio" name='4'><input type="radio" name='4'><input type="radio" name='4'><input type="radio" name='4'> </div>
+                        <div>Armes à feu <input type="radio" name='5'><input type="radio" name='5'><input type="radio" name='5'><input type="radio" name='5'><input type="radio" name='5'> </div>
+                        <div>Mélée <input type="radio" name='6'><input type="radio" name='6'><input type="radio" name='6'><input type="radio" name='6'><input type="radio" name='6'> </div>
+                        <div>Représentation <input type="radio" name='7'><input type="radio" name='7'><input type="radio" name='7'><input type="radio" name='7'><input type="radio" name='7'> </div>
+                        <div>Sécurité <input type="radio" name='8'><input type="radio" name='8'><input type="radio" name='8'><input type="radio" name='8'><input type="radio" name='8'> </div>
+                        <div>Furtivité <input type="radio" name='9'><input type="radio" name='9'><input type="radio" name='9'><input type="radio" name='9'><input type="radio" name='9'> </div>
+                        <div>Survie <input type="radio" name='10'><input type="radio" name='10'><input type="radio" name='10'><input type="radio" name='10'><input type="radio" name='10'> </div>
+                    </form>
+                </div>
+                <div class="attributs">
+                    <h2>Connaissances</h2>
+                    <form action="ficheP.html" method="post">
+                        <div>Érudition <input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'> </div>
+                        <div>Informatique <input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'> </div>
+                        <div>Finances <input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'> </div>
+                        <div>Investigation <input type="radio" name='4'><input type="radio" name='4'><input type="radio" name='4'><input type="radio" name='4'><input type="radio" name='4'> </div>
+                        <div>Droit <input type="radio" name='5'><input type="radio" name='5'><input type="radio" name='5'><input type="radio" name='5'><input type="radio" name='5'> </div>
+                        <div>Linguistique <input type="radio" name='6'><input type="radio" name='6'><input type="radio" name='6'><input type="radio" name='6'><input type="radio" name='6'> </div>
+                        <div>Médecine <input type="radio" name='7'><input type="radio" name='7'><input type="radio" name='7'><input type="radio" name='7'><input type="radio" name='7'> </div>
+                        <div>Occultisme <input type="radio" name='8'><input type="radio" name='8'><input type="radio" name='8'><input type="radio" name='8'><input type="radio" name='8'> </div>
+                        <div>Politique <input type="radio" name='9'><input type="radio" name='9'><input type="radio" name='9'><input type="radio" name='9'><input type="radio" name='9'> </div>
+                        <div>Sciences <input type="radio" name='10'><input type="radio" name='10'><input type="radio" name='10'><input type="radio" name='10'><input type="radio" name='10'> </div>
+                    </form>
+                </div>
+            </div>
+            <h1>Avantages</h1>
+            <div class="zones">
+                <div class="attributs">
+                    <h2>Historiques</h2>
+                    <form action="ficheP.html" method="post">
+                        <div><input type='text' name='historique1' class="txt"><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'> </div>
+                        <div><input type='text' name='historique2' class="txt"><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'> </div>
+                        <div><input type='text' name='historique3' class="txt"><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'> </div>
+                        <div><input type='text' name='historique4' class="txt"><input type="radio" name='4'><input type="radio" name='4'><input type="radio" name='4'><input type="radio" name='4'><input type="radio" name='4'> </div>
+                        <div><input type='text' name='historique5' class="txt"><input type="radio" name='5'><input type="radio" name='5'><input type="radio" name='5'><input type="radio" name='5'><input type="radio" name='5'> </div>
+                        <div><input type='text' name='historique6' class="txt"><input type="radio" name='6'><input type="radio" name='6'><input type="radio" name='6'><input type="radio" name='6'><input type="radio" name='6'> </div>
+                        <div><input type='text' name='historique7' class="txt"><input type="radio" name='7'><input type="radio" name='7'><input type="radio" name='7'><input type="radio" name='7'><input type="radio" name='7'> </div>
+                    </form>
+                </div>
+                <div class="attributs">
+                    <h2>Disciplines</h2>
+                    <form action="ficheP.html" method="post">
+                        <div><input type='text' name='Disciplines1' class="txt"><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'> </div>
+                        <div><input type='text' name='Disciplines2' class="txt"><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'> </div>
+                        <div><input type='text' name='Disciplines3' class="txt"><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'> </div>
+                        <div><input type='text' name='Disciplines4' class="txt"><input type="radio" name='4'><input type="radio" name='4'><input type="radio" name='4'><input type="radio" name='4'><input type="radio" name='4'> </div>
+                        <div><input type='text' name='Disciplines5' class="txt"><input type="radio" name='5'><input type="radio" name='5'><input type="radio" name='5'><input type="radio" name='5'><input type="radio" name='5'> </div>
+                        <div><input type='text' name='Disciplines6' class="txt"><input type="radio" name='6'><input type="radio" name='6'><input type="radio" name='6'><input type="radio" name='6'><input type="radio" name='6'> </div>
+                        <div><input type='text' name='Disciplines7' class="txt"><input type="radio" name='7'><input type="radio" name='7'><input type="radio" name='7'><input type="radio" name='7'><input type="radio" name='7'> </div>
+                    </form>
+                </div>
+                <div class="attributs">
+                    <h2>Vertues</h2>
+                    <form action="ficheP.html" method="post">
+                        <div>Conscience/</br>Conviction<input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'> </div>
+                        <div>Maîtrise de soi/</br>instict<input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'> </div>
+                        <div>Courage<input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'> </div>
+                </div>
+            </div>
+            <h1>_</h1>
+            <div class="zones">
+                <div class="attributs">
+                    <h2>Atous & handicaps</h2>
+                    <form action="ficheP.html" method="post" class="atouts">
+                        <input type='text' name='bonus1' class="txt">
+                        <input type='text' name='bonus2' class="txt">
+                        <input type='text' name='bonus3' class="txt">
+                        <input type='text' name='bonus4' class="txt">
+                        <input type='text' name='bonus5' class="txt">
+                        <input type='text' name='bonus6' class="txt">
+                        <input type='text' name='bonus7' class="txt">
+                        <input type='text' name='bonus8' class="txt">
+                        <input type='text' name='bonus9' class="txt">
+                        <input type='text' name='bonus10' class="txt">
+                        <input type='text' name='bonus11' class="txt">
+                    </form>
+                </div>
+                <div class="attributs">
+                    <div class="partie">
+                        <h2>Humanite/Voie</h2>
+                        <div class="humanite">
+                            <input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'>
+                        </div>
+                    </div>
+                    <div class="partie">
+                        <h2>volonte</h2>
+                        <div class="volonte">
+                            <input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'>
+                        </div>
+                    </div>
+                    <div class="partie">
+                        <h2>Réserve de sang</h2>
+                        <div class="humanite">
+                            <input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'>
+                        </div>
+                    </div>
+                </div>
+                <div class="attributs">
+                    <div class="partie">
+                        <h2>Sante</h2>
+                    </div>
+                    <div class="partie">
+                        <h2>Experience</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
     </main>
 </body>
 </html>
