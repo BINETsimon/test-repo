@@ -9,6 +9,8 @@
     <meta name="keywords" content="JDR, Fiche, personnage, Vampire, Masquerade"/>
     <meta name="author" content="S.B"/>
 
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+
     <!-- feuille de style principale -->
     <link rel="stylesheet" type="text/css" media="screen" href="css/main.css"/>
 </head>
@@ -16,7 +18,7 @@
 <body>
     <header>
         <!-- barre de navigation -->
-        <div class="nav">
+        <nav class="nav">
             <ul>    
                 <li><a href="index.html" class="active">Home</a></li>
                 <li><a href="pages/userFiche.html">Fiches personnage</a></li>
@@ -25,13 +27,24 @@
                 <li><a href="pages/contact.html">Contact</a></li>
                 <li style="float:right"><a href="pages/inscription.html">Utilisateur</a></li>
             </ul>           
-        </div>
+        </nav>
+        <nav class="navtab">
+            <ul>    
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="pages/userFiche.html">Fiches personnage</a></li>
+                <li><a href="pages/salleJ.html">Salle de jeu</a></li>
+                <li><a href="pages/news.html">News</a></li>
+                <li><a href="pages/contact.html">Contact</a></li>
+                <li><a href="pages/inscription.html">Utilisateur</a></li>
+            </ul>           
+        </nav>
     </header>
 
     <main>
         <!-- section top -->
         <div class="imageTOP">
-            <img src="media/vampireb.png">
+            <img src="media/fondtop.png" class="fond">
+            <img src="media/vampireb.png" class="imgvampire">
             <div class="butons">
                 <div class="inscription">
                     <a href="pages/inscription.html">S'inscrire</a>
@@ -44,8 +57,8 @@
 
         <!-- section 1 -->
         <section>
-            <h1>Bienvenue sur le site non-officiel de gestion de fiches personnage du jeu Vampire la masquarade !</h1>
-            <article>
+            <h1>Bienvenue sur le site de gestion de fiches personnage du jeu Vampire la masquarade !</h1>
+            <article class="index">
                 <h2>Voici un petit guide pour l'utilisation du site :</h2>
                 <ol>
                     <li>Se connecter</li>
@@ -68,6 +81,9 @@
             </article>
         </section>
     </main>
+    <footer>
+        
+    </footer>
 </body>
 
 

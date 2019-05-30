@@ -3,12 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <title>Vampire la mascarade</title>
+    <title>Vampire la mascarade - création de fiches</title>
     <link rel="icon" href="../media/icon.png"/>
     <meta name="description" content="Fiches personnages pour le jeu Vampire The Masquerade"/>
     <meta name="keywords" content="JDR, Fiche, personnage, Vampire, Masquerade"/>
     <meta name="author" content="S.B"/>
 
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
     <!-- feuille de style principale -->
     <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css"/>
 </head>
@@ -16,7 +17,7 @@
 <body>
     <header>
         <!-- barre de navigation -->
-        <div class="nav">
+        <nav class="nav">
             <ul>    
                 <li><a href="../index.html">Home</a></li>
                 <li><a href="userFiche.html" class="active">Fiches personnage</a></li>
@@ -25,31 +26,43 @@
                 <li><a href="contact.html">Contact</a></li>
                 <li style="float:right"><a href="inscription.html">Utilisateur</a></li>
             </ul>           
-        </div>
+        </nav>
+        <nav class="navtab">
+            <ul>    
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="userFiche.html" class="active">Fiches personnage</a></li>
+                    <li><a href="salleJ.html">Salle de jeu</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                <li><a href="inscription.html">Utilisateur</a></li>
+            </ul>           
+        </nav>
     </header>
 
     <main>
         <!-- tuto fiches fixé gauche -->
-        <div class="editeur">
-            <h1>Edition de fiches</h1>
-            <ol>
-                <li>Ajouter une fiche personnage</li>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultrices sit amet ipsum ut congue. Vestibulum condimentum tincidunt ex, ac facilisis justo placerat quis. Nulla aliquet at tellus non volutpat. Nullam blandit semper magna in tincidunt.
-                </p>
-                <li>Modifier sa fiche</li>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultrices sit amet ipsum ut congue. Vestibulum condimentum tincidunt ex, ac facilisis justo placerat quis. Nulla aliquet at tellus non volutpat. Nullam blandit semper magna in tincidunt.
-                </p>
-                <li>Utiliser sa fiche</li>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultrices sit amet ipsum ut congue. Vestibulum condimentum tincidunt ex, ac facilisis justo placerat quis. Nulla aliquet at tellus non volutpat. Nullam blandit semper magna in tincidunt.
-                </p>
-                <li>bien lire une fiche</li>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultrices sit amet ipsum ut congue. Vestibulum condimentum tincidunt ex, ac facilisis justo placerat quis. Nulla aliquet at tellus non volutpat. Nullam blandit semper magna in tincidunt.
-                </p>
-                <li>Oublis a ne pas faire</li>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultrices sit amet ipsum ut congue. Vestibulum condimentum tincidunt ex, ac facilisis justo placerat quis. Nulla aliquet at tellus non volutpat. Nullam blandit semper magna in tincidunt.
-                </p>
-            </ol>
-        </div>
+        <section class="editeur">
+            <div class="boiteediteur">
+                <h1>Edition de fiches</h1>
+                <ol>
+                    <li>Ajouter une fiche personnage</li>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultrices sit amet ipsum ut congue. Vestibulum condimentum tincidunt ex, ac facilisis justo placerat quis. Nulla aliquet at tellus non volutpat. Nullam blandit semper magna in tincidunt.
+                    </p>
+                    <li>Modifier sa fiche</li>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultrices sit amet ipsum ut congue. Vestibulum condimentum tincidunt ex, ac facilisis justo placerat quis. Nulla aliquet at tellus non volutpat. Nullam blandit semper magna in tincidunt.
+                    </p>
+                    <li>Utiliser sa fiche</li>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultrices sit amet ipsum ut congue. Vestibulum condimentum tincidunt ex, ac facilisis justo placerat quis. Nulla aliquet at tellus non volutpat. Nullam blandit semper magna in tincidunt.
+                    </p>
+                    <li>bien lire une fiche</li>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultrices sit amet ipsum ut congue. Vestibulum condimentum tincidunt ex, ac facilisis justo placerat quis. Nulla aliquet at tellus non volutpat. Nullam blandit semper magna in tincidunt.
+                    </p>
+                    <li>Oublis a ne pas faire</li>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultrices sit amet ipsum ut congue. Vestibulum condimentum tincidunt ex, ac facilisis justo placerat quis. Nulla aliquet at tellus non volutpat. Nullam blandit semper magna in tincidunt.
+                    </p>
+                </ol>
+            </div>
+        </section>
 
         <!-- différentes fiches personnages -->
         <article class="articlemargin">
@@ -86,5 +99,8 @@
         </article>
 
     </main>
+    <footer>
+        
+    </footer>
 </body>
 </html>

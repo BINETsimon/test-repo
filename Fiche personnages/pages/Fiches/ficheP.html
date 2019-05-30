@@ -3,12 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <title>Vampire la mascarade</title>
+    <title>Vampire la mascarade - fiche personnage</title>
     <link rel="icon" href="../../media/icon.png"/>
     <meta name="description" content="Fiches personnages pour le jeu Vampire The Masquerade"/>
     <meta name="keywords" content="JDR, Fiche, personnage, Vampire, Masquerade"/>
     <meta name="author" content="S.B"/>
 
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
     <!-- feuille de style principale -->
     <link rel="stylesheet" type="text/css" media="screen" href="../../css/main.css"/>
 </head>
@@ -16,21 +17,32 @@
 <body>
     <header>
         <!-- barre de navigation -->
-        <div class="nav">
+        <nav class="nav">
             <ul>    
                 <li><a href="../../index.html">Home</a></li>
                 <li><a href="../userFiche.html">Fiches personnage</a></li>
                 <li><a href="../salleJ.html">Salle de jeu</a></li>
                 <li><a href="../news.html">News</a></li>
                 <li><a href="../contact.html">Contact</a></li>
-                <li style="float:right"><a href="inscription.html">Utilisateur</a></li>
+                <li style="float:right"><a href="../inscription.html">Utilisateur</a></li>
             </ul>           
-        </div>
+        </nav>
+        <nav class="navtab">
+            <ul>    
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../userFiche.html">Fiches personnage</a></li>
+                    <li><a href="../salleJ.html">Salle de jeu</a></li>
+                    <li><a href="../news.html">News</a></li>
+                    <li><a href="../contact.html">Contact</a></li>
+                <li><a href="../inscription.html">Utilisateur</a></li>
+            </ul>           
+        </nav>
     </header>
 
     <main>
         <article class="container">
-            <div class="zones">
+            <img src="../../media/vampire.png">
+            <div class="zones formulairevamp">
                 <form action="ficheP.html" method="post">
                     Nom : <input type='text' name='Nom'>
                     Chronique : <input type='text' name='Chronique'>
@@ -150,17 +162,20 @@
                 </div>
                 <div class="attributs">
                     <h2>Vertues</h2>
-                    <form action="ficheP.html" method="post">
-                        <div>Conscience/</br>Conviction<input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'> </div>
-                        <div>Maîtrise de soi/</br>instict<input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'> </div>
-                        <div>Courage<input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'> </div>
+                    <div>
+                        <form action="ficheP.html" method="post">
+                            <div>Conscience/</br>Conviction<input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'><input type="radio" name='1'> </div></br>
+                            <div>Maîtrise de soi/</br>instict<input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'> </div></br>
+                            <div>Courage<input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'> </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <h1>_</h1>
+            <h1>Plus</h1>
             <div class="zones">
-                <div class="attributs">
+                <div class="attributs atouts">
                     <h2>Atous & handicaps</h2>
-                    <form action="ficheP.html" method="post" class="atouts">
+                    <form action="ficheP.html" method="post">
                         <input type='text' name='bonus1' class="txt">
                         <input type='text' name='bonus2' class="txt">
                         <input type='text' name='bonus3' class="txt">
@@ -186,24 +201,46 @@
                         <div class="volonte">
                             <input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'><input type="radio" name='2'>
                         </div>
+                        <div class="volonte">
+                            <input type="checkbox" name='3'><input type="checkbox" name='3'><input type="checkbox" name='3'><input type="checkbox" name='3'><input type="checkbox" name='3'><input type="checkbox" name='3'><input type="checkbox" name='3'><input type="checkbox" name='3'><input type="checkbox" name='3'><input type="checkbox" name='3'>
+                        </div>
                     </div>
                     <div class="partie">
-                        <h2>Réserve de sang</h2>
+                        <h2>Reserve de sang</h2>
                         <div class="humanite">
-                            <input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'><input type="radio" name='3'>
+                            <input type="checkbox" name='3'><input type="checkbox" name='3'><input type="checkbox" name='3'><input type="checkbox" name='3'><input type="checkbox" name='3'><input type="checkbox" name='3'><input type="checkbox" name='3'><input type="checkbox" name='3'><input type="checkbox" name='3'><input type="checkbox" name='3'>
+                        </div>
+                        <div class="humanite">    
+                            <input type="checkbox" name='3'><input type="checkbox" name='3'><input type="checkbox" name='3'><input type="checkbox" name='3'><input type="checkbox" name='3'><input type="checkbox" name='3'><input type="checkbox" name='3'><input type="checkbox" name='3'><input type="checkbox" name='3'><input type="checkbox" name='3'>
                         </div>
                     </div>
                 </div>
                 <div class="attributs">
                     <div class="partie">
                         <h2>Sante</h2>
+                        <form action="ficheP.html" method="post">
+                            <div>Contusion<input type="checkbox" name='Contusion'></div>
+                            <div>Blessure légère (-1)<input type="checkbox" name='BlessureL'></div>
+                            <div>Blessure moyenne (-1)<input type="checkbox" name='BlessureM'></div>
+                            <div>Blessure grave (-2)<input type="checkbox" name='BlessureG'></div>
+                            <div>Handicap (-2)<input type="checkbox" name='Handicap'></div>
+                            <div>Infirmité (-5) <input type="checkbox" name='Infirmite'></div>
+                            <div>Invalidité <input type="checkbox" name='Invalidite'></div>
+                        </form>
                     </div>
                     <div class="partie">
                         <h2>Experience</h2>
+                        <div class="barreEx">
+                            <div class="experience">
+
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </article>
     </main>
+    <footer>
+    </footer>
 </body>
 </html>

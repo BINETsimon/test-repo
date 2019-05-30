@@ -1,13 +1,19 @@
 html, body, main{
     width: 100%;
-    height: 100%;
     padding: 0;
     margin: 0;
     background-color: #cccccc;
 }
 
+footer{
+    width: 100%;
+    height: 300px;
+    background-color: #333;
+}
+
 h1, h2{
     font-family: "Optimus";
+    font-size: 200%;
 }
 
 a{
@@ -58,21 +64,66 @@ a{
     background-color: #4CAF50;
 }
 
-@media screen and (max-width: 1000px) {
+.nav{
+    display: block;
+}
+
+.navtab{
+    display: none;
+}
+
+@media (max-width: 1024px) {
+    .nav{
+        display: none;
+    }
+    
+    .navtab{
+        display: block;
+    }
+    
+    .navtab{
+        top: 0px;
+        width: 100%;
+        background-color: #333;
+        box-shadow: 0 8px 18px #000000;
+        z-index: 200;
+        font-family: "Optimus";
+    }
+    
+    .navtab ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .navtab li {
+        height: 52px;
+    }
+    
+    .navtab li a {
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        padding: 15px;
+    }
+    
+    .navtab .active {
+        background-color: #4CAF50;
+    }
 }
 
 /* bannière top */
 
 .imageTOP{
-    background-image: url("../media/fondtop.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     width: 100%;
-    height: 100%;
+    overflow: hidden;
 }
 
-.imageTOP img{
+.imageTOP img[class="fond"]{
+    width: 100%;
+}
+
+.imageTOP img[class="imgvampire"]{
     position: absolute;
     top: 30%;
     left: 32%;
@@ -100,6 +151,76 @@ a{
     transition: 1s;
 }
 
+@media (max-width: 1024px) {
+    
+    .imageTOP img[class="fond"]{
+        width: 180%;
+    }
+    
+    .imageTOP img[class="imgvampire"]{
+        position: absolute;
+        top: 50%;
+        left: 25%;
+        width: 50%;
+    }
+    
+    .imageTOP .butons{
+        position: absolute;
+        top: 80%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .butons a{
+        padding: 20px;
+        background-color: #333; 
+        font-family: "Optimus";
+        font-size: 150%;
+        box-shadow: 0 8px 20px #000000, 8px 0 20px #000000, 0 -8px 20px #000000, -8px 0 20px #000000;
+    }
+    
+    .butons a:hover{
+        background-color: #111;
+        transition: 1s;
+    }
+}
+
+@media (max-width: 400px) {
+    
+    .imageTOP img[class="fond"]{
+        width: 280%;
+    }
+    
+    .imageTOP img[class="imgvampire"]{
+        position: absolute;
+        top: 60%;
+        left: 12%;
+        width: 75%;
+    }
+    
+    .imageTOP .butons{
+        position: absolute;
+        top: 95%;
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    
+    .butons a{
+        padding: 20px;
+        background-color: #333; 
+        font-family: "Optimus";
+        font-size: 100%;
+        box-shadow: 0 4px 10px #000000, 4px 0 10px #000000, 0 -4px 10px #000000, -4px 0 10px #000000;
+    }
+    
+    .butons a:hover{
+        background-color: #111;
+        transition: 1s;
+    }
+}
+
 /* section 1 */
 
 section{
@@ -107,7 +228,7 @@ section{
     height: 100%;
 }
 
-article{
+article[class="index"]{
     width: 65%;
     margin: auto;
     margin-top: 5%;
@@ -118,7 +239,7 @@ section h1{
     text-align: center;
 }
 
-article li{
+article[class="index"] li{
     list-style-type: upper-roman;
     font-size: 125%;
     font-weight: bold;
@@ -130,13 +251,34 @@ article li{
     src: url("../fonts/OptimusPrinceps.ttf")
 }
 
+
+@media (max-width: 400px) {
+    section h1{
+        font-size: 200%;
+    }
+
+    h2{
+        font-size: 150%;
+    }
+
+    article[class="index"]{
+        width: 90%;
+        margin: auto;
+    }
+}
+
 /* Page éditeur de fiches*/
 
 .editeur{
-    top: 10%;
-    position: fixed;
+    top: 5%;
+    position: sticky;
+    float: left;
     width: 30%;
+}
+
+.boiteediteur{
     height: 85%;
+    width: 100%;
     box-shadow: 8px 0px 18px #000000;
     background-color: #333 ;
     border-radius: 0px 10px 10px 0px;
@@ -145,8 +287,11 @@ article li{
 }
 
 .articlemargin{
+    position: relative;
     width: 50%;
-    margin-right: 10%;
+    margin-top: 2%;
+    margin-left: 40%;
+    margin-bottom: 10%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -162,8 +307,7 @@ article li{
 }
 
 .fichesP img{
-    display: flex;
-    justify-content: center;
+    width: 250px;
 }
 
 .editeur li{
@@ -178,19 +322,57 @@ article li{
     text-align: left;
 }
 
+@media (max-width: 1024px) {
+    .editeur{
+        position: relative;
+        width: 100%;
+        float: none;
+    }
+
+    .boiteediteur{
+        box-shadow: 8px 0px 18px #000000;
+        background-color: #333 ;
+        border-radius: 0px 10px 10px 0px;
+        text-align: center;
+        color: #ffffff;
+    }
+
+    .articlemargin{
+        width: 90%;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 400px) {
+    .fichesP{
+        width: 125px;
+        height: 150px;
+        margin-top: 50px;    
+        border: #000000 solid 1px;
+        overflow: hidden;
+        background-color: #ffffff;
+    }
+
+    .fichesP img{
+        width: 125px;
+    }
+}
+
+
 /* news */
 
 #secVid{
-    overflow: hidden;
     background-color: #000000;
     width: 100%;
-    height: 100%;
+    position: relative;
 }
 
 #BackVideo{
     opacity: 0.8;
     width: 100%;
-
 }
 
 .newsEx{
@@ -204,27 +386,25 @@ article li{
 }
 
 .boxNews{
-    background-image: url("../media/news/vieux.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    position: relative;
     width: 500px;
     height: 500px;
     margin: 25px 20px;
     overflow: hidden;
 }
 
+.boxNews img{
+    width: 100%;
+}
+
 .textNewsTOP{
     position: absolute;
     bottom: 0px;
+    right: 0px;
     background-color: #000000;
     opacity: 0.8;
-    width: 98%;
-    height: 150px;
-    z-index: 100;
-    margin-top: 350px;
     color: #ffffff;
-    padding: 10px 0px 0px 20px;
+    padding: 0px 10px 10px 10px;
 }
 
 .textNewsTOP p{
@@ -232,14 +412,38 @@ article li{
 }
 
 .textNews{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
     background-color: #000000;
     opacity: 0.8;
-    width: 100%;
-    height: 250px;
-    z-index: 100;
-    margin-top: 350px;
     padding: 2px 10px 15px 10px;
     color: #ffffff;
+}
+
+@media (max-width: 400px){
+    .textNewsTOP{
+        position: relative;
+        background-color: #000000;
+        opacity: 0.8;
+        color: #ffffff;
+    }
+    .textNewsTOP p{
+        width: 90%;
+        margin: auto;
+        font-size: 75%;
+    }
+
+    .textNewsTOP h1{
+        font-size: 100%;
+    }
+
+    .textNews{
+        background-color: #000000;
+        opacity: 0.8;
+        padding: 2px 10px 0px 10px;
+        color: #ffffff;
+    }
 }
 
 /* loader salle de jeu */
@@ -333,13 +537,18 @@ article li{
     justify-content: space-around;
 }
 
+.contact p{
+    width: 80%;
+    margin: auto;
+    padding-bottom: 10px;
+}
+
 .Prezcontacts .contact{
     width: 35%;
     border: solid 1px #000000;
     text-align: center;
+    margin-bottom: 10%;
 }
-
-
 
 .Prezcontacts .contact .photocontact{
     width: 100%;
@@ -353,7 +562,38 @@ article li{
     border-radius: 50%;
 }
 
+@media (max-width: 1024px){
+    .Prezcontacts{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .Prezcontacts .contact{
+        width: 100%;
+        border: solid 1px #000000;
+        text-align: center;
+    }
+    
+    .Prezcontacts .contact .photocontact{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media (max-width: 400px){
+    .Prezcontacts .contact img{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+    }
+}
 /* inscriptions */
+
+.spe{
+    height: 100%;
+}
 
 .fondformulaire{
     width: 100%;
@@ -379,7 +619,7 @@ article li{
 }
 
 .formulaire{
-    width: 40%;
+    width: 80%;
     margin-top: 12%;
 }
 
@@ -389,7 +629,7 @@ article li{
 
 
 .formulaire h1{
-    font-size: 300%;
+    font-size: 250%;
 }
 
 .formulaire input{
@@ -420,17 +660,32 @@ article li{
     bottom: 15%;
 }
 
+@media (max-width: 400px){
+    .formulaire input{
+        padding: 5px;
+        margin-bottom: 25px;
+        font-size: 100%;
+        border-radius: 25px;
+        border: solid 1px #333;
+    }
+}
+
 /* fiches perso */
 
-.container{
+article[class="container"]{
+    width: 80%;
     margin: auto;
-    margin-top: 200px;
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 100px;
+    padding-bottom: 20px;
     border: 1px solid black;
 }
 
 .zones{
     display: flex;
     justify-content: space-around;
+    text-align: left;
 }
 
 .zones form{
@@ -440,6 +695,21 @@ article li{
 
 .container h1, .container h2{
     text-align: center;
+}
+
+.container h2{
+    font-size: 125%;
+}
+
+.container h1{
+    background-color: #333;
+    color: #fff;
+}
+
+.container img{
+    width: 40%;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .attributs{
@@ -457,4 +727,65 @@ article li{
 
 .partie input[type="radio"]{
     float: none;
+}
+
+.partie input[type="checkbox"]{
+    float: right;
+}
+
+.atouts input[type='text']{
+    width: 100%;
+}
+
+.barreEx{
+    width: 80%;
+    height: 30px;
+    margin: auto;
+    border: 1px solid #000000;
+}
+
+.experience{
+    width: 30%;
+    height: 30px;
+    background-color: #4CAF50;
+}
+
+@media (max-width:1330px){
+    article[class="container"]{
+    width: 60%;
+    }    
+    
+    .zones{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .attributs{
+        width: 80%;
+        margin: auto;
+    }
+
+    input[type='text']{
+        width: 50%;
+    }
+    
+    .formulairevamp {
+        text-align: center;
+    }
+
+    .zones form input[type='text']{
+        margin: auto;
+    }
+}
+
+@media (max-width:1024px){
+    article[class="container"]{
+        width: 90%;
+        margin-top: 30px;
+    }
+
+    .container img{
+        width: 80%;
+    }
 }
