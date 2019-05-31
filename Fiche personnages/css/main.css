@@ -5,12 +5,6 @@ html, body, main{
     background-color: #cccccc;
 }
 
-footer{
-    width: 100%;
-    height: 300px;
-    background-color: #333;
-}
-
 h1, h2{
     font-family: "Optimus";
     font-size: 200%;
@@ -20,6 +14,70 @@ a{
     text-decoration: none;
     color: white;
 }
+
+/* footer */
+
+footer{
+    width: 100%;
+    position: relative;
+    bottom: 0;
+    background-color: #333;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.footerB{
+    margin: 30px 0 30px 0;
+    width: 300px;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.sanslien p{
+    text-align: center;
+    color: #999;
+}
+
+.footerB a{
+    padding: 10px 0 10px 0;
+    color: #999;
+}
+
+.footerB .directlink img{
+    width: 40%;
+}
+
+.directlink{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contactplus{
+    text-align: center;
+    margin: 10px 0 10px;
+}
+
+.contactplus img{
+    text-align: center;
+    width: 20%;
+}
+
+.footerB img[src="media/vampireb.png"], .footerB img[src="../media/vampireb.png"], .footerB img[src="../../media/vampireb.png"]{
+    width: 99%;
+}
+
+.copyright{
+    text-align: center;
+    font-size: 80%;
+    color: #999;
+    position: absolute;
+    bottom: 20px;
+}
+
 
 /* barre de navigation */
 
@@ -194,14 +252,14 @@ a{
     
     .imageTOP img[class="imgvampire"]{
         position: absolute;
-        top: 60%;
+        top: 85%;
         left: 12%;
         width: 75%;
     }
     
     .imageTOP .butons{
         position: absolute;
-        top: 95%;
+        top: 120%;
         width: 100%;
         display: flex;
         justify-content: space-around;
@@ -284,6 +342,7 @@ article[class="index"] li{
     border-radius: 0px 10px 10px 0px;
     text-align: center;
     color: #ffffff;
+    padding-right: 10px;
 }
 
 .articlemargin{
@@ -310,12 +369,25 @@ article[class="index"] li{
     width: 250px;
 }
 
-.editeur li{
+.editeur ol li{
     list-style-type: upper-roman;
     font-size: 125%;
     font-weight: bold;
     font-family: "Optimus";
     text-align: left;
+}
+
+.editeur ul li{
+    list-style-type: none;
+    font-size: 90%;
+    font-weight: inherit;
+    font-family: inherit;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.editeur ul li:before {
+	content: "- "; /* on affiche une chaîne de caractère */
 }
 
 .editeur p{
@@ -332,7 +404,8 @@ article[class="index"] li{
     .boiteediteur{
         box-shadow: 8px 0px 18px #000000;
         background-color: #333 ;
-        border-radius: 0px 10px 10px 0px;
+        border-radius: 0px 0px 0px 0px;
+        padding: 0;
         text-align: center;
         color: #ffffff;
     }
@@ -340,6 +413,7 @@ article[class="index"] li{
     .articlemargin{
         width: 90%;
         margin: auto;
+        margin-bottom: 20px;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -424,10 +498,27 @@ article[class="index"] li{
 @media (max-width: 400px){
     .textNewsTOP{
         position: relative;
-        background-color: #000000;
-        opacity: 0.8;
-        color: #ffffff;
     }
+
+    .responsiveNews{
+        width: 320px;
+        height: 320px;
+        overflow: hidden;
+    }
+
+    .boxNews{
+        background-color: #000000;
+    }
+
+    .textNews{
+        position: relative;
+    }
+
+    .textNews p{
+        position: relative;
+        font-size: 75%;
+    }
+
     .textNewsTOP p{
         width: 90%;
         margin: auto;
@@ -439,14 +530,45 @@ article[class="index"] li{
     }
 
     .textNews{
-        background-color: #000000;
         opacity: 0.8;
         padding: 2px 10px 0px 10px;
         color: #ffffff;
     }
 }
 
+/* article news */
+
+.Articletype{
+    margin: auto;
+    margin-top: 100px;
+    width: 80%;
+    text-align: center;
+}
+
+.Articletype iframe{
+    width:800px;
+    height:460px;
+}
+
+@media(max-width:1024px){
+    .Articletype iframe{
+        width:560px;
+        height:315px;
+    }
+}
+
+@media(max-width:600px){
+    .Articletype iframe{
+        width:300px;
+        height:170px;
+    }
+}
+
 /* loader salle de jeu */
+
+main[class="SalleJ"]{
+    margin-bottom: 300px;
+}
 
 .tLoader{
     padding-top: 15%;
