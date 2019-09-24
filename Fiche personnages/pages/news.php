@@ -1,0 +1,140 @@
+<!DOCTYPE php>
+<php>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Vampire la mascarade - news</title>
+    <link rel="icon" href="../media/icon.png"/>
+    <meta name="description" content="Nouveautés sur le jeu Vampire : The Masquarade"/>
+    <meta name="keywords" content="JDR, Fiche, personnage, Vampire, Masquerade"/>
+    <meta name="author" content="S.B"/>
+
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+    <!-- feuille de style principale -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css"/>
+</head>
+
+<body>
+    <header>
+        <!-- barre de navigation -->
+        <nav class="nav">
+            <ul>    
+                <li><a href="../index.php">Home</a></li>
+                <li><a href="userFiche.php">Fiches personnage</a></li>
+                <li><a href="salleJ.php">Salle de jeu</a></li>
+                <li><a href="news.php" class="active">News</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li style="float:right"><a href="inscription.php">Utilisateur</a></li>
+            </ul>           
+        </nav>
+        <nav class="navtab">
+            <ul>    
+                    <li><a href="../index.php">Home</a></li>
+                    <li><a href="userFiche.php">Fiches personnage</a></li>
+                    <li><a href="salleJ.php">Salle de jeu</a></li>
+                    <li><a href="news.php" class="active">News</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                <li><a href="inscription.php">Utilisateur</a></li>
+            </ul>           
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div id="secVid">
+                <video autoplay muted loop id="BackVideo">
+                    <source src="../media/Trailer.mp4" type="video/mp4">
+                </video>
+                <div class="textNewsTOP">
+                    <a href="News/Articletype.php">
+                        <h2>Vampire : the mascarade - Bloodlines 2. Un nouveau trailer qui donne des frissons aux joueurs !</h2>
+                        <p>Le nouveau jeu de Vampire donne des frissons aux joueurs. Il y a beaucoup d'attente et d'espoir derrière le jeu. Vous vous demandez probablement si cette suite du premier volume vaut le coup. Nous essayons de faire un point avec les journalistes qui ont testé le gameplay.</p>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="news">
+                <article class="boxNews">
+                    <div class="responsiveNews">
+                        <img src="../media/news/livrevampire.jpg">
+                    </div>
+                    <div class="textNews">
+                        <a href="News/Articletype.php">
+                            <h2>Super nouvelle ! Le livre des 20 ans est sorti</h2>
+                            <p>Depuis la création du jeu, antoine passe des weekend sur les jeux de rôle de Vampire : la mascarade. Il devient donc l'un des doyens du jeu. Nous avons réussi à contacter cette personne extraordinaire pour vous proposer une interview de ce fan incontestable.</p>
+                        </a>
+                    </div>
+                </article>
+                <article class="boxNews">
+                    <div class="responsiveNews">
+                        <img src="../media/news/cosplay.jpg">
+                    </div>
+                    <div class="textNews">
+                        <a href="News/Articletype.php">
+                            <h2>Concours du meilleur cosplay</h2>
+                            <p>Suite à l'annonce de Bloodlines 2, les plus grands fans décident déjà d'organiser un grand concours de cosplayer. Les conditions requises sont de réaliser un cosplay sur l'un des personnages présentés dans la bande annonce.</p>
+                        </a>
+                    </div>
+                </article>
+                <article class="boxNews">
+                    <div class="responsiveNews">
+                        <img src="../media/news/figurines.jpg">
+                    </div>
+                    <div class="textNews">
+                        <a href="News/Articletype.php">
+                            <h2>Des super figurines de votre JDR favoris</h2>
+                            <p>Vous ne le saviez peut-être pas mais des figurines existent autour de l'univers de Vampire: the Masquerade. Peut-être trouverez-vous votre bonheur parmis toutes celles disponibles.</p>
+                        </a>
+                    </div>
+                </article>
+                <article class="boxNews">
+                    <div class="responsiveNews">
+                        <img src="../media/news/musique.png">
+                    </div>
+                    <div class="textNews">
+                        <a href="News/Articletype.php">
+                            <h2>TOP 10 des meilleures musiques d'ambiance</h2>
+                            <p>Après de nombreuse heures de recherche nous vous avons mis au point une playlist qui plaira à plus d'un. Les styles sont variés mais nous sommes sûr que vous trouverez la perle rare qui vous accompagnera dans vos parties.</p>
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footerB">
+            <h2>Pages :</h2>
+            <a href="../index.php">Home</a>
+            <a href="userFiche.php">Fiches personnage</a>
+            <a href="Fiches/ficheP.php">Fiches perso type</a>
+            <a href="salleJ.php">Salle de jeu (loader)</a>
+            <a href="news.php">News</a>
+            <a href="contact.php">Contact</a>
+            <a href="inscription.php">Utilisateur</a>
+        </div>
+        <div class="footerB sanslien">
+            <img src="../media/vampireb.png">
+            <p>Site qui sert aux joueurs de Vampire : La Masquarade pour sauvegarder et jouer avec leurs fiches personnage. Ne remplacez pas une bonne partie IRL.</p>
+            <div class="copyright">
+                Ploupcorp, Paris, France | 2019 © Tous droits réservés 
+            </div>
+        </div>
+        <div class="footerB sanslien">
+            <h2>Nous contacter :</h2>
+            <div class="directlink">
+                <a href="https://www.instagram.com/" target="_blank"><img src="../media/reseaux/instagram-logo.png"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="../media/reseaux/facebook.png"></a>
+            </div>
+            <div class="contactplus">
+                <img src="../media/reseaux/email.png"> 
+                <p style="margin:0">ContactVampireLaMascarade@gmail.com</p>
+            </div>
+            <div class="contactplus">
+                <img src="../media/reseaux/call.png">
+                <p>00 00 00 00 00</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</php>

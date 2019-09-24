@@ -1,0 +1,121 @@
+<!DOCTYPE php>
+<php>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Vampire la mascarade</title>
+    <link rel="icon" href="media/icon.png"/>
+    <meta name="description" content="Site de gestion de fiche personnage"/>
+    <meta name="keywords" content="JDR, Fiche, personnage, Vampire, Masquerade"/>
+    <meta name="author" content="S.B"/>
+
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+    <!-- feuille de style principale -->
+    <link rel="stylesheet" type="text/css" media="screen" href="css/main.css"/>
+</head>
+
+<body>
+    <header>
+        <!-- barre de navigation -->
+        <nav class="nav">
+            <ul>    
+                <li><a href="index.php" class="active">Home</a></li>
+                <li><a href="pages/userFiche.php">Fiches personnage</a></li>
+                <li><a href="pages/salleJ.php">Salle de jeu</a></li>
+                <li><a href="pages/news.php">News</a></li>
+                <li><a href="pages/contact.php">Contact</a></li>
+                <li style="float:right"><a href="pages/inscription.php">Utilisateur</a></li>
+            </ul>           
+        </nav>
+        <nav class="navtab">
+            <ul>    
+                <li><a href="index.php" class="active">Home</a></li>
+                <li><a href="pages/userFiche.php">Fiches personnage</a></li>
+                <li><a href="pages/salleJ.php">Salle de jeu</a></li>
+                <li><a href="pages/news.php">News</a></li>
+                <li><a href="pages/contact.php">Contact</a></li>
+                <li><a href="pages/inscription.php">Utilisateur</a></li>
+            </ul>           
+        </nav>
+    </header>
+
+    <main>
+        <!-- section top -->
+        <div class="imageTOP">
+            <img src="media/fondtop.png" class="fond" alt="Fond Vampire : The Masquerade">
+            <img src="media/vampireb.png" class="imgvampire">
+            <div class="butons">
+                <div class="inscription">
+                    <a href="pages/inscription.php">S'inscrire</a>
+                </div>
+                <div class="connection">
+                    <a href="pages/inscription.php">Se connecter</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- section 1 -->
+        <section>
+            <h1>Bienvenue sur le site de gestion de fiches personnage du jeu Vampire la masquarade !</h1>
+            <article class="index">
+                <h2>Voici un petit guide pour l'utilisation du site :</h2>
+                <ol>
+                    <li>Se connecter</li>
+                        <p>Vous connecter va vous permettre de profiter pleinement de l'expérience que nous vous proposons. Pour cela vous allez devoir cliquer sur le bouton connexion ou inscription si vous n’avez pas de compte. </br>
+                        Vous pouvez choisir entre être simple joueur ou bien Maître joueur. 
+                        En vous connectant, vous pourrez trouver vos amis, vous ajouter et jouer ensemble. Si vous être maître joueur d'une chronique, vos amis pourront vous partager leurs fiches afin que vous puissiez les utiliser dans la salle de jeu.
+                        </p> 
+                    <li>Inscrire ses fiches personnage</li>
+                        <p>Pour inscrire vos fiches personnage, allez dans l'onglet réservé à cet effet. Vous pourrez choisir une fiche déjà réalisée pour la modifier ou bien en créer une nouvelle. Dans ce cas, vous arriverez sur une fiche vierge reprise avec les attributs identiques du livre de règle officiel.</br>
+                        Premièrement vous devrez ajouter une photo pour votre personnage. Ensuite, vous pourrez modifier vos compétences comme bon vous semble. Le nombre de bonus ainsi que le nom des différentes capacités sont contrôlés. Faites attention à ce que les informations soient toutes remplies pour ne pas affecter vos parties. Vous pourrez modifier votre fiche en revenant dans l’onglet Fiches personnage dans le futur.</br>
+                        Toutes les modifications que vous allez réaliser seront enregistrées pour pouvoir réutiliser vos fiches lors de parties endiablées. 
+                                </p> 
+                    <li>Jouer avec ses fiches</li>
+                        <p>Si vous êtes simple joueur, vous allez devoir tout d’abord partager votre fiche au maître joueur qui organise la chronique à laquelle vous souhaitez participer. Pour cela allez dans la partie gestion de fiches, faites clique droit, “partager au MJ” et sélectionnez le MJ parmis vos amis. Ensuite, vous pouvez aller dans l’onglet salle de jeu et sélectionner la partie ouverte par votre amis.</br> 
+                        Pour les maîtres joueurs, vous allez directement dans l’onglet salle de jeu, créez une nouvelle chronique. Les fiches personnage qui ont été au préalable partagé par vos amis vous seront proposés. Sélectionnez celles que vous souhaitez joindre à l’aventure puis confirmez. Vous aurez un visuel sur la totalité des fiches en partie.</br> 
+                        Les lancés de dés seront automatisés en fonction des données rentrées sur la fiche. Une fois lancés, les dés donneront un résultat qui modifiera automatiquement les fiches en fonction de l’importance de la situation. 
+                        </p> 
+                        <li>Gestion de l'espace personnel</li>
+                        <p>Dans votre espace personnel, vous pouvez modifier votre statut entre joueur et MJ (Maître joueur). Vous pouvez modifier votre pseudo et votre image de profil. Votre nombre de parties sera indiqué. On peut observer votre personnage préféré (celui avec lequel vous avez réalisé le plus de parties mais également celui qui a les meilleures statistiques). Vos amis auront accès à votre profil et pourront voir toutes ces informations.</p> 
+                </ol>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div class="footerB">
+            <h2>Pages :</h2>
+            <a href="index.php">Home</a>
+            <a href="pages/userFiche.php">Fiches personnage</a>
+            <a href="pages/Fiches/ficheP.php">Fiches perso type</a>
+            <a href="pages/salleJ.php">Salle de jeu (loader)</a>
+            <a href="pages/news.php">News</a>
+            <a href="pages/contact.php">Contact</a>
+            <a href="pages/inscription.php">Utilisateur</a>
+        </div>
+        <div class="footerB sanslien">
+            <img src="media/vampireb.png">
+            <p>Site qui sert aux joueurs de Vampire : La Masquarade pour sauvegarder et jouer avec leurs fiches personnage. Ne remplacez pas une bonne partie IRL.</p>
+            <div class="copyright">
+                Ploupcorp, Paris, France | 2019 © Tous droits réservés 
+            </div>
+        </div>
+        <div class="footerB sanslien">
+            <h2>Nous contacter :</h2>
+            <div class="directlink">
+                <a href="https://www.instagram.com/" target="_blank"><img src="media/reseaux/instagram-logo.png"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="media/reseaux/facebook.png"></a>
+            </div>
+            <div class="contactplus">
+                <img src="media/reseaux/email.png"> 
+                <p style="margin:0">ContactVampireLaMascarade@gmail.com</p>
+            </div>
+            <div class="contactplus">
+                <img src="media/reseaux/call.png">
+                <p>00 00 00 00 00</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+</php>

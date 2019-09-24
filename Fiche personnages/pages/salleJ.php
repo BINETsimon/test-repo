@@ -1,0 +1,86 @@
+<!DOCTYPE php>
+<php>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <title>Vampire la mascarade - salle de jeu</title>
+    <link rel="icon" href="../media/icon.png"/>
+    <meta name="description" content="Zone de jeu. Lancez vos chroniques et amusez-vous avec vous amis"/>
+    <meta name="keywords" content="JDR, Fiche, personnage, Vampire, Masquerade"/>
+    <meta name="author" content="S.B"/>
+
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=yes" />
+    <!-- feuille de style principale -->
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/main.css"/>
+</head>
+
+<body>
+    <header>
+        <!-- barre de navigation -->
+        <nav class="nav">
+            <ul>    
+                <li><a href="../index.php">Home</a></li>
+                <li><a href="userFiche.php">Fiches personnage</a></li>
+                <li><a href="salleJ.php" class="active">Salle de jeu</a></li>
+                <li><a href="news.php">News</a></li>
+                <li><a href="contact.php">Contact</a></li>
+                <li style="float:right"><a href="inscription.php">Utilisateur</a></li>
+            </ul>           
+        </nav>
+        <nav class="navtab">
+            <ul>    
+                    <li><a href="../index.php">Home</a></li>
+                    <li><a href="userFiche.php">Fiches personnage</a></li>
+                    <li><a href="salleJ.php" class="active">Salle de jeu</a></li>
+                    <li><a href="news.php">News</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                <li><a href="inscription.php">Utilisateur</a></li>
+            </ul>           
+        </nav>
+    </header>
+        
+    <main class="SalleJ">
+        <h1 class="tLoader">Page en cours de construction. Soyez patients !</h1>
+        <div class="loader">
+            <div class="carre1"></div>
+            <div class="carre2"></div>
+            <div class="carre3"></div>
+            <div class="carre4"></div>
+        </div>
+    </main>
+    <footer>
+        <div class="footerB">
+            <h2>Pages :</h2>
+            <a href="../index.php">Home</a>
+            <a href="userFiche.php">Fiches personnage</a>
+            <a href="Fiches/ficheP.php">Fiches perso type</a>
+            <a href="salleJ.php">Salle de jeu (loader)</a>
+            <a href="news.php">News</a>
+            <a href="contact.php">Contact</a>
+            <a href="inscription.php">Utilisateur</a>
+        </div>
+        <div class="footerB sanslien">
+            <img src="../media/vampireb.png">
+            <p>Site qui sert aux joueurs de Vampire : La Masquarade pour sauvegarder et jouer avec leurs fiches personnage. Ne remplacez pas une bonne partie IRL.</p>
+            <div class="copyright">
+                Ploupcorp, Paris, France | 2019 © Tous droits réservés 
+            </div>
+        </div>
+        <div class="footerB sanslien">
+            <h2>Nous contacter :</h2>
+            <div class="directlink">
+                <a href="https://www.instagram.com/" target="_blank"><img src="../media/reseaux/instagram-logo.png"></a>
+                <a href="https://www.facebook.com/" target="_blank"><img src="../media/reseaux/facebook.png"></a>
+            </div>
+            <div class="contactplus">
+                <img src="../media/reseaux/email.png"> 
+                <p style="margin:0">ContactVampireLaMascarade@gmail.com</p>
+            </div>
+            <div class="contactplus">
+                <img src="../media/reseaux/call.png">
+                <p>00 00 00 00 00</p>
+            </div>
+        </div>
+    </footer>   
+</body>
+</php>
